@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm hiểu var, let, nothing</title>
+</head>
+<body>
+    <script>
+        //Khai báo biến
+        var name            = 'Tâm';
+        let room_name       = 'C0221A';//underscore
+        var hoVaTen         = 'Nguyễn Tài Tâm';//camelcase
+        var dinhThiMongMo   = '';
+
+        /*
+            var, let: đều là cách khai báo biến
+            let: giá trị chỉ ở trong khối { ...Trong 1 khối... }, và ngoài khối thì nó mất đi
+        */
+        var a = 5;
+        var b = 6;
+        if( b > a ){
+            //so_sanh = 'B lớn hơn A'; //khai bao biến với nothing
+            //let so_sanh = 'B lớn hơn A'; //khai bao biến với từ khóa let
+            var so_sanh = 'B lớn hơn A';
+            document.write('Trong khối: ' + so_sanh );//với từ khóa let và var thì nó đều tồn tại
+
+            document.write('<hr>');
+        }
+        document.write('Ngoài khối: ' + so_sanh);//với từ khóa let, thì nó KHÔNG tồn tại
+
+    </script>
+</body>
+</html>
